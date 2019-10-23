@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页计算器</title>
+<style>/*css3开头*/
+body{/*选择标签“body”中的全部内容*/
+	margin:0px;/*外边距为0*/
+	background-repeat:no-repeat;/*背景图片排列方式：没有花样*/
+	background-image:url(background.jpg);/*背景图片的位置*/
+	background-size:100%;/*背景图片占屏幕大小*/
+	
+}
+.box{/*选择class为box的内容*/
+	margin-left:35%;/*左外边距：35%*/
+	margin-top:3%;
+	width:400px;/*宽度*/
+	height:625px;
+	background-color:rgba(255,255,255,0.5);/*背景颜色，和0.5的背景色透明度*/
+}
+.title{
+	position:relative;/*使用相对定位*/
+	top:5px;/*上到下定位距离5px*/
+	left:5px;
+	font-size:12px;/*字体大小12px*/                        
+    color:#FFF;/*颜色*/
+}
+.display{
+	width:114px;
+	height:285px;	
+}
+.b{
+	float:left;/*设置浮动：从左向右一次排列*/
+	width:96px;
+	height:59px;
+	background-color:rgba(204,204,204,0.6);
+	margin-left:1px;
+	margin-right:1px;
+	margin-top:1px;
+	margin-bottom:1px;
+	border:none;
+	font-size: 18px;
+}
+
+.d{
+	background-color:rgba(0,0,0,0.85);
+	color:#CCC;
+	border:none;
+}
+#firstInput{/*选择id为t的内容*/
+	width:395px;
+	height:250px;
+	position:relative;
+	top:5%;
+	background-color:rgba(0,0,0,0.1);
+	color:#FFF;
+	font-size:42px;
+}
+	
+
+</style>
+<script type="text/javascript" src="2.2代js.js">//引入js</script>
+</head>
+
+<body>
+
+<div class="box">
+    <div class="title">计算器</div>
+    <div class="display"><input type="text" id="firstInput" value="" /></div><!--输入 类型“文本” id为t 默认显示“”-->
+    <div><input type="button" class="b" value="AC" onclick="rule(this.value)"/></div><!--输入 类型“按钮” class为b 默认显示“C”-->
+    <div><input type="button" class="b" value="" onclick="det" ></div>
+    <div><input type="button"  class="b" value="%" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b" value="/" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="7" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="8" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="9" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b" value="*" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="4" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="5" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="6" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b" value="-" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="1" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="2" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="3" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b" value="+" onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b" value="." onclick="rule(this.value)"/></div>
+    <div><input type="button" class="b d" value="0" onclick="rule(this.value)"/></div>
+    <div class="19 b"></div>
+    <div><input type="button" id="key" class="b" value="=" onclick="theKey(this.value)"/></div>    
+</div>
+	<header>hh</header>
+</body>
+</html>
